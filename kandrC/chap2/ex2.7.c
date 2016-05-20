@@ -37,6 +37,11 @@ unsigned invert(unsigned x, int p, int n) {
     return x;
 }
 
+unsigned invert(unsigned x, int p, int n) {
+    unsigned a = ~(getbits(x, p, n));
+    return setbits(x, p, n, a);
+}
+
 int
 main() {
 	printf("%d\n", invert(182, 5, 3));
