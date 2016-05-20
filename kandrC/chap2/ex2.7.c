@@ -26,12 +26,15 @@ unsigned setbits(unsigned x, int p, int n, unsigned y) {
 }
 
 unsigned invert(unsigned x, int p, int n) {
-	unsigned char a = getbits(x, p, n);
-	printf("1 a = %d\n", a);
-	a = ~(a & (~0 << n));
-	printf("2 a = %d\n", a);
-	a = a << (p + 1 - n);
-	return x & a;
+    unsigned a = ~(getbits(x, p, n));
+    unsigned b = getbits(x, (p - n), (p + 1 -n));
+    x = x >> (p + 1 -n);
+    x = x >> n;
+    x = x << n;
+    x = x | a;
+    x = x << (p + 1 - n);
+    x = x | b;
+    return x;
 }
 
 int
