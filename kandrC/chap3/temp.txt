@@ -1,0 +1,11 @@
+this is a good file with tabs			 and newlines		
+
+and more tabs		
+
+and more new lines
+
+
+and more tabs	
+			
+
+			
