@@ -20,7 +20,6 @@ bitcount2(unsigned x) {
 	for (b = 0; x != 0; x &= (x-1))
 		b++;
 	return b;
-
 }
 
 int
