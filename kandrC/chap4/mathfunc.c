@@ -1,9 +1,6 @@
-#include <stdio.h>
 #include <math.h>
 #include <string.h>
-
-void push(double);
-double pop(void);
+#include "calc.h"
 
 double
 mathfunc(char s[]) {

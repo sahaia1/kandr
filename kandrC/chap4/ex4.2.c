@@ -1,15 +1,6 @@
-#include <stdio.h>
+#include "calc.h"
 #include <stdlib.h>
-
-#define MAXOP 100
-#define NUMBER '0'
-#define NAME 'n'
-
-int getop(char []);
-void push(double);
-double pop(void);
-void show(void);
-double mathfunc(char []);
+#include <stdio.h>
 
 /* reverse polish Calculator */
 int

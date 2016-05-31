@@ -1,20 +1,12 @@
 #include <ctype.h>
 #include <stdio.h>
 #include <string.h>
+#include "calc.h"
 
-#define NUMBER '0'
-#define NAME 'n'
-#define TRUE 1
-#define FALSE 0
-#define BUFSIZE 100
 
 typedef unsigned int bool;
 char line[BUFSIZE];
 int j = 0;
-
-// int getch(void);
-// void ungetch(int);
-int get_line(char[], int);
 
 // getop
 int
