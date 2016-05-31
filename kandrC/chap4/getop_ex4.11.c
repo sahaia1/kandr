@@ -12,7 +12,7 @@ int j = 0;
 int
 getop(char s[]) {
 	int i, c, a;
-	int lastc = 0;
+	static int lastc = 0;
 
 	while ((s[0] = c = getch()) == ' ' || c == '\t')
 		;
